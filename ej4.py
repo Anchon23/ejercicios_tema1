@@ -3,8 +3,8 @@ def function(ip):
     if len(lista) == 4:
         for i in lista:
             try:
-                int(i) < 0 or int(i) > 255
-                return False
+                if int(i) < 0 or int(i) > 255:
+                    return False
             except ValueError as e:
                 e = "alguno de los valores no es un numero"
                 return e
@@ -12,5 +12,5 @@ def function(ip):
     else:
         return False
 
-print(function("192.188.1.38"))
+print(function("111.2331.23.12"))
     
