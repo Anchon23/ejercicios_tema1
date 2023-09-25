@@ -12,5 +12,5 @@ def function(ip):
     else:
         return False
 
-print(function("111.2331.23.12"))
+print(function("111.231.23.12"))
     
